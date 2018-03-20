@@ -1,3 +1,4 @@
 module.exports = {
-  unirest: require('./unirest')
+  unirest: require('./unirest'),
+  sqllize: require('./sqllize')
 };
