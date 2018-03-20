@@ -1,4 +1,4 @@
-# nreina-node-utils
+# nelreina-node-utils
 
 Library of handy Utils scripts for NodeJS / Most common use in my projects
 
@@ -27,7 +27,7 @@ options = {
 ### Example
 
 ```javascript
-const { unirest } = require('nreina-node-utils');
+const { unirest } = require('nelreina-node-utils');
 
 unirest('https://jsonplaceholder.typicode.com/posts')
   .then(data => console.log(data))
@@ -37,7 +37,7 @@ unirest('https://jsonplaceholder.typicode.com/posts')
 #### OR
 
 ```javascript
-const { unirest } = require('nreina-node-utils');
+const { unirest } = require('nelreina-node-utils');
 
 (async () => {
   const data = await unirest('https://jsonplaceholder.typicode.com/posts');
