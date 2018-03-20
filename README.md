@@ -2,6 +2,11 @@
 
 Library of handy Utils scripts for NodeJS / Most common use in my projects
 
+This package contains:
+
+* unirest
+* sqllize - some handy sequelize utility functions
+
 ## Unirest
 
 An abstraction of unirest module and promisify.
@@ -44,3 +49,7 @@ const { unirest } = require('nelreina-node-utils');
   console.info(data);
 })();
 ```
+
+## sqllize
+
+Pending docs...
