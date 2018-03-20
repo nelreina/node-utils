@@ -1,0 +1,22 @@
+{
+  "name": "nreina-node-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nodemon --watch src/test src/test/index.js"
+  },
+  "keywords": [],
+  "author": "Nelson Reina <nelreina@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelreina/nreina-utils.git"
+  },
+  "dependencies": {
+    "unirest": "^0.5.1"
+  }
+}
