@@ -155,6 +155,10 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
+bluebird@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
 boom@2.x.x:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
@@ -432,6 +436,10 @@ delegates@^1.0.0:
 detect-libc@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
+
+doc-path@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/doc-path/-/doc-path-1.2.1.tgz#2068ec83c1d967bea51ba99263e479d6dd1d17a3"
 
 dot-prop@^4.1.0:
   version "4.2.0"
@@ -996,6 +1004,14 @@ isstream@~0.1.2:
 jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
+
+json-2-csv@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/json-2-csv/-/json-2-csv-2.2.0.tgz#5de1e738c9cb47cbca7770cd15ce5121d6f26dbb"
+  dependencies:
+    bluebird "3.5.1"
+    doc-path "1.2.1"
+    underscore "1.8.3"
 
 json-schema@0.2.3:
   version "0.2.3"
@@ -1847,6 +1863,10 @@ undefsafe@^2.0.2:
   resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.2.tgz#225f6b9e0337663e0d8e7cfd686fc2836ccace76"
   dependencies:
     debug "^2.2.0"
+
+underscore@1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
 union-value@^1.0.0:
   version "1.0.0"
