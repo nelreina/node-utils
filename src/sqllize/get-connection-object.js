@@ -15,6 +15,8 @@ module.exports = dialect => {
   switch (dialect) {
     case 'mssql':
       options.host = host;
+      options.dialect = dialect;
+      conn.host = host;
       conn.dialect = dialect;
       conn.options = options;
       conn.operatorsAliases = false;
