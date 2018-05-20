@@ -1,5 +1,4 @@
-const { unirest, sqllize } = require('../index');
-const { getConnectionObject } = sqllize;
+const { unirest } = require('../index');
 const { toJSON } = require('../converters');
 
 const csv = `key, value
@@ -12,7 +11,6 @@ welcome, bon bini`;
   const data = await unirest('https://jsonplaceholder.typicode.com/posts');
   console.info(`Unirest test: Got ${data.length} posts!`);
 
-  console.info('sqllize test: conn object', getConnectionObject('mysql'));
 
   console.info(await toJSON(csv));
   console.log('====================================');
