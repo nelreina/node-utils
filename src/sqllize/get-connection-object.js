@@ -4,6 +4,7 @@ module.exports = dialect => {
   const password = process.env.DB_PASSWORD;
   const database = process.env.DB_NAME;
   const host = process.env.DB_HOST;
+  const port = process.env.DB_PORT;
   let options;
   try {
     options = JSON.parse(process.env.DB_OPTIONS);
@@ -15,11 +16,12 @@ module.exports = dialect => {
   switch (dialect) {
     case 'mssql':
       options.host = host;
+      if (port) {
+        options.port = parseInt(port);
+      }
       options.dialect = dialect;
-      conn.host = host;
-      conn.dialect = dialect;
+      options.operatorsAliases = false;
       conn.options = options;
-      conn.operatorsAliases = false;
       break;
     case 'mysql':
     case 'postgres':
